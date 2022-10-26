@@ -2,8 +2,8 @@
 
     :root {
         --color-primary: #787DDE;
-        --color-danger: #ff7782;
-        --color-success: #41f1b6;
+        --color-danger: #FF7782;
+        --color-success: #41F1B6;
         --color-warning: #ffbb55;
         --color-white: #fff;
         --color-info-dark: #7d8da1;
@@ -45,7 +45,7 @@ body{
     user-select: none;
     background: var(--color-background);
     overflow-x: hidden;
-    color: var(--color-dark);
+    
     }
 
 a{
@@ -228,4 +228,25 @@ main .insights > div {
     border-radius: var(--card-border-radius);
     margin-top: 1rem;
     box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+main .insights > div:hover{
+    box-shadow: none;
+}
+
+main .insights > div span {
+    background: var(--color-primary);
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--color-white);
+    font-size: 2rem;
+} 
+
+main .insights div.expenses span{
+    background: #FF7782;;
+}
+
+main .insights div.income span{
+    background: var(--color-success);
 }
