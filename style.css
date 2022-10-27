@@ -19,7 +19,7 @@
         --border-radius-3: 12rem;
         --card-padding: 1.8rem;
         --padding-1:1.2rem;
-        --box-shadow: 0 2rem 3rem var(-color-light);
+        --box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
     }
 
 *{
@@ -308,4 +308,51 @@ main .insights .progress .number{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+main .insights small {
+    margin-top: 1.3rem;
+    display: block;
+}  
+
+
+/* ++++ RECENT ORDERS ++++ */
+
+main .recent-orders{
+    margin-top: 2rem;
+}
+
+main .recent-orders h2 {
+    margin-bottom: 0.8rem;
+}
+
+main .recent-orders table{
+    background: #fff;
+    width: 100%;
+    border-radius: 2rem;
+    padding: 1.8rem;
+    text-align: center;
+    box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+    transition: all 300ms ease;
+}
+
+main .recent-orders table:hover {
+    box-shadow: none;
+}
+
+main table tbody td {
+    height: 3rem;
+    border-bottom: 1px solid rgba(132, 139, 200, 0.18);
+    color: #677483;
+}
+
+main table tbody tr:last-child td{
+    border: none;
+}
+
+main .recent-orders a{
+    text-align: center;
+    display: block;
+    margin: 2rem auto;
+    color:  #787DDE;
 }
